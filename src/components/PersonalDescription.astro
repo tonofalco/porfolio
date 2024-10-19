@@ -1,0 +1,42 @@
+---
+const personalImageAlt = "Luis Antonio";
+import perfil from "@/assets/img/perfil.webp";
+---
+
+<article
+  class="flex-col items-center justify-center gap-8 text-gray-700 dark:text-gray-100 "
+>
+  <div class="flex justify-center items-center">
+    <img
+      src="/./src/assets/img/perfil.webp"
+      alt={personalImageAlt}
+      class="order-1 mb-3 object-cover p-2 w-64 aspect-square rounded-2xl bg-black/20 dark:bg-yellow-500/5 ring-1 ring-black/70 dark:ring-white/20"
+    />
+  </div>
+
+  <div
+    class="[&>p]:mb-4 [&>p>strong]:text-blue-500 [&>p>strong]:font-mono text-pretty order-2 md:order-1 text-md"
+  >
+    <p>
+      Hola, mi nombre es Luis Antonio, estudie la carrera de ingeniería en
+      computación en la UAGRO y posteriormente obtuve el grado de Maestría con
+      el programa MIIDT. Fue a través de este programa que inicié mi carrera
+      profesional en el desarrollo web y desde entonces he mantenido un
+      aprendizaje continuo mediante cursos en línea y el estudio de
+      documentaciones.
+    </p>
+
+    <p>
+      <strong>Me gusta desarrollar sitios web dinámicos, enfocándome principalmente en
+      la experiencia del usuario.</strong> Entre mis trabajos, destaco la creación de un
+      sistema web interno para la gestión de cotizaciones y la renta de transportes de
+      una agencia de viajes reconocida a nivel estatal.
+    </p>
+
+    <p>
+      <strong>Cuento con experiencia en el desarrollo de aplicaciones web con diseños
+      responsivos</strong>, mi estilo se basa en crear interfaces minimalistas y
+      funcionales.
+    </p>
+  </div>
+</article>

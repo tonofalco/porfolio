@@ -1,0 +1,13 @@
+---
+const { title } = Astro.props;
+---
+
+<card
+  class="shadow-md
+bg-gradient-to-tr from-gray-400 to-blue-400 p-0.5  rounded-md"
+>
+  <div class="bg-gray-100 h-full  p-5 rounded-md dark:bg-gray-800 text-black dark:text-white">
+    <h1 class="font-semibold text-2xl mb-2 text-center text-blue-400">{title}</h1>
+    <slot />
+  </div>
+</card>

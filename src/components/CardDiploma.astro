@@ -1,0 +1,25 @@
+---
+const { title, subtitle, href } = Astro.props;
+---
+
+<card class="shadow-md border border-gray-400 bg-gray-100 dark:bg-gray-900 rounded-md p-5 flex flex-col h-full">
+  <p class="text-sm">
+    {title}
+  </p>
+  <p class="text-xs text-blue-500 dark:text-blue-300">
+    {subtitle}
+  </p>
+  
+  <div class="flex-grow"></div> <!-- Este div ocupa el espacio disponible -->
+
+  <div class="flex justify-end">
+    <a
+      target="_blank"
+      href={href}
+      class="mt-5 text-xs bg-gray-100 text-gray-800 border-gray-300 gap-2 px-3 py-2 transition dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80 hover:bg-gray-600 hover:brightness-125 hover:border-gray-900 group max-w-fit rounded-xl hover:text-white focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2 active:bg-black"
+    >
+      ver más
+    </a>
+  </div>
+</card>
+

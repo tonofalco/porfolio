@@ -1,0 +1,48 @@
+---
+import Github from "@/assets/icons/Github.astro";
+import LinkButton from "./LinkButton.astro";
+import Link from "@/assets/icons/Link.astro";
+
+const { img, title, description, tools, linkGithub, linkPreview } = Astro.props;
+---
+
+<article
+  class="relative overflow-hidden group h-[400px] bg-primary card-hidden rounded-lg"
+>
+  <img
+    src={img}
+    class="h-full transition-all duration-400 ease-in w-full group-hover:scale-105 object-center"
+  />
+  <div
+    class="absolute p-8 z-40 gap-4 flex flex-col justify-end bg-opacity-45 h-full w-full bottom-0"
+  >
+    <span
+      class="text-[20px] sm:text-[24px]  md:text-[28px] font-semibold text-gray-100"
+    >
+      {title}
+    </span>
+    <div class="group-hover:block text-white text-[14px] hidden">
+      <p>{description}</p>
+      <div class="flex justify-between mt-6">
+        <div
+          class="py-2 px-4 rounded-xl shadow-inner bg-gray-100 text-gray-800 border-gray-300 dark:text-white dark:bg-gray-800 border dark:border-gray-600 focus-visible:ring-yellow-500/80"
+        >
+          <slot name="tools" />
+        </div>
+
+        <div class="space-x-3">
+          <LinkButton href={linkGithub} title="codigo">
+            <Github />
+          </LinkButton>
+          <LinkButton href={linkPreview} title="preview">
+            <Link />
+          </LinkButton>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="absolute transition-all duration-400 ease-in bg-gradient-to-b from-transparent to-black min-h-[150px] text-white bottom-0 group-hover:bottom-0 group-hover:min-h-[300px] w-full z-1"
+  >
+  </div>
+</article>

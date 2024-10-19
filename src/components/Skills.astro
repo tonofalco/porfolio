@@ -1,0 +1,160 @@
+---
+import "@/styles/Skills.css";
+import Badge from "./Badge.astro";
+import CardsSkils from "@/components/CardSkills.astro";
+import HTML from "@/assets/icons/HTML.astro";
+import CSS from "@/assets/icons/CSS.astro";
+import Javascript from "@/assets/icons/Javascript.astro";
+import Bootstrap from "@/assets/icons/Bootstrap.astro";
+import Typescript from "@/assets/icons/Typescript.astro";
+import Tailwind from "@/assets/icons/Tailwind.astro";
+import React from "@/assets/icons/React.astro";
+import ReactNative from "@/assets/icons/ReactNative.astro";
+import Nodejs from "@/assets/icons/Nodejs.astro";
+import MySQL from "@/assets/icons/MySQL.astro";
+import AstroIcon from "@/assets/icons/AstroIcon.astro";
+import Angular from "@/assets/icons/Angular.astro";
+import VSC from "@/assets/icons/VSC.astro";
+import Git from "@/assets/icons/Git.astro";
+import Github from "@/assets/icons/Github.astro";
+import Figma from "@/assets/icons/Figma.astro";
+import Postman from "@/assets/icons/Postman.astro";
+import Nextjs from "@/assets/icons/Nextjs.astro";
+import Wordpress from "@/assets/icons/Wordpress.astro";
+import Filezilla from "@/assets/icons/Filezilla.astro";
+import SSH from "@/assets/icons/SSH.astro";
+---
+
+<section class="grid grid-cols-1 md:grid-cols-3 gap-5 max-sm:mx-5">
+  <CardsSkils title="Habilidades">
+    <div class="mt-5 grid grid-cols-4 gap-4 md:grid-cols-3">
+      <div class="skill">
+        <HTML />
+        <span>HTML</span>
+      </div>
+
+      <div class="skill">
+        <CSS />
+        <span>CSS</span>
+      </div>
+
+      <div class="skill">
+        <Javascript />
+        <span>Javascript</span>
+      </div>
+
+      <div class="skill">
+        <Typescript />
+        <span>Typescript</span>
+      </div>
+
+      <div class="skill">
+        <Bootstrap />
+        <span>Bootstrap</span>
+      </div>
+
+      <div class="skill">
+        <Tailwind />
+        <span>Tailwind</span>
+      </div>
+
+      <div class="skill">
+        <React />
+        <span>React</span>
+      </div>
+
+      <div class="skill">
+        <Nodejs />
+        <span>Nodejs</span>
+      </div>
+
+      <div class="skill">
+        <MySQL />
+        <span>MySQL</span>
+      </div>
+    </div>
+  </CardsSkils>
+
+  <CardsSkils title="Aprendiendo">
+    <div class="mt-5 grid grid-cols-4 gap-4 md:grid-cols-3">
+      <div class="skill">
+        <AstroIcon />
+        <span>Astro</span>
+      </div>
+
+      <div class="skill">
+        <React />
+        <span class="text-center">React Native</span>
+      </div>
+
+      <div class="skill">
+        <Nextjs />
+        <span>Nextjs</span>
+      </div>
+
+      <div class="skill">
+        <Angular />
+        <span>Angular</span>
+      </div>
+    </div>
+  </CardsSkils>
+
+  <CardsSkils title="Herramientas">
+    <div class="mt-5 grid grid-cols-4 gap-4 md:grid-cols-3">
+      <div class="skill">
+        <VSC />
+        <span>VSC</span>
+      </div>
+
+      <div class="skill">
+        <Figma />
+        <span>Figma</span>
+      </div>
+
+      <div class="skill">
+        <Git />
+        <span>Git</span>
+      </div>
+
+      <div class="skill">
+        <Postman />
+        <span>Postman</span>
+      </div>
+
+      <div class="skill">
+        <Wordpress />
+        <span>Wordpress</span>
+      </div>
+
+      <div class="skill">
+        <Filezilla />
+        <span>Filezilla</span>
+      </div>
+
+      <div class="skill">
+        <SSH />
+        <span>SSH</span>
+      </div>
+    </div>
+  </CardsSkils>
+
+  <style>
+    .skill {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.2s ease; /* Para suavizar el efecto de hover */
+      transform: scale(0.8);
+    }
+
+    .skill:hover {
+      transform: scale(1);
+    }
+
+    .skill span {
+      margin-top: 10px;
+      font-size: 1.25em;
+    }
+  </style>
+</section>

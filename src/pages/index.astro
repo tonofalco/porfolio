@@ -1,16 +1,44 @@
 ---
+import Projects from "@/components/Projects.astro";
 
+import Hero from "../components/Hero.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import IndexLayout from "../layouts/indexLayout.astro";
+TitleSection
+
+
+import Skills from "@/components/Skills.astro";
+import AboutMe from "@/components/AboutMe.astro";
+import TitleSection from "@/components/TitleSection.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<IndexLayout
+  title="Porlofio"
+  description="Desarrollador web especializado en la programacion web"
+  >
+  <!-- INICIO -->
+  <main class="px-4">
+    <SectionContainer class="py-16 md:py-28" id="inicio">
+      <div>
+        <Hero />
+      </div>
+    </SectionContainer>
+  </main>
+
+  <div class="space-y-24">
+    <SectionContainer id="tecnologias">
+      <TitleSection title="Tecnologias"/>
+      <Skills />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <TitleSection title="Proyectos"/>
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="sobre-mi">
+      <TitleSection title="Sobre Mi"/>
+      <AboutMe />
+    </SectionContainer>
+  </div>
+</IndexLayout>

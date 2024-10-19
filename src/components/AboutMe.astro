@@ -1,0 +1,44 @@
+---
+import Contact from "./Contact.astro";
+import Diplomas from "./Diplomas.astro";
+import PersonalDescription from "./PersonalDescription.astro";
+
+PersonalDescription;
+---
+
+<section class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-sm:mx-5">
+  <div class="flex items-center">
+    <PersonalDescription />
+    
+  </div>
+
+  <div class="flex flex-col h-full">
+<!--  -->
+
+    <!-- <hr class="my-5"> -->
+
+    <div class=" flex-grow">
+      <Contact />
+    </div>
+
+    
+    <div class="mt-5">
+      <Diplomas />
+    </div>
+  </div>
+</section>
+
+<!-- <section  class="grid grid-cols-1 max-sm:mx-5">
+  <PersonalDescription />
+  <hr class="my-5">
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div class="flex justify-center">
+      <Diplomas />
+
+    </div>
+    <div class="flex justify-center">
+      <Contact />
+
+
+</section> -->
