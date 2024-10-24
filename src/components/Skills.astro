@@ -23,11 +23,13 @@ import Nextjs from "@/assets/icons/Nextjs.astro";
 import Wordpress from "@/assets/icons/Wordpress.astro";
 import Filezilla from "@/assets/icons/Filezilla.astro";
 import SSH from "@/assets/icons/SSH.astro";
+import Sass from "@/assets/icons/Sass.astro";
+import Redux from "@/assets/icons/Redux.astro";
 ---
 
-<section class="grid grid-cols-1 md:grid-cols-3 gap-5 max-sm:mx-5">
+<section class="grid grid-cols-1 md:grid-cols-2 gap-5 max-sm:mx-5 ">
   <CardsSkils title="Habilidades">
-    <div class="mt-5 grid grid-cols-4 gap-4 md:grid-cols-3">
+    <div class="mt-5 grid grid-cols-4 gap-4">
       <div class="skill">
         <HTML />
         <span>HTML</span>
@@ -59,8 +61,18 @@ import SSH from "@/assets/icons/SSH.astro";
       </div>
 
       <div class="skill">
+        <Sass />
+        <span>Sass</span>
+      </div>
+
+      <div class="skill">
         <React />
         <span>React</span>
+      </div>
+
+      <div class="skill">
+        <Redux />
+        <span>Redux</span>
       </div>
 
       <div class="skill">
@@ -75,68 +87,72 @@ import SSH from "@/assets/icons/SSH.astro";
     </div>
   </CardsSkils>
 
-  <CardsSkils title="Aprendiendo">
-    <div class="mt-5 grid grid-cols-4 gap-4 md:grid-cols-3">
-      <div class="skill">
-        <AstroIcon />
-        <span>Astro</span>
+  <div class="grid grid-cols-1 gap-5 ">
+    <CardsSkils title="Aprendiendo">
+      <div class="mt-5 grid grid-cols-4 gap-4 md:grid-cols-4">
+        <div class="skill">
+          <AstroIcon />
+          <span>Astro</span>
+        </div>
+  
+        <div class="skill">
+          <React />
+          <span class="text-center">React Native</span>
+        </div>
+  
+        <div class="skill">
+          <Nextjs />
+          <span>Nextjs</span>
+        </div>
+  
+        <div class="skill">
+          <Angular />
+          <span>Angular</span>
+        </div>
       </div>
-
-      <div class="skill">
-        <React />
-        <span class="text-center">React Native</span>
+    </CardsSkils>
+  
+    <CardsSkils title="Herramientas">
+      <div class="mt-5 grid grid-cols-4 gap-4 md:grid-cols-4">
+        <div class="skill">
+          <VSC />
+          <span>VSC</span>
+        </div>
+  
+        <div class="skill">
+          <Figma />
+          <span>Figma</span>
+        </div>
+  
+        <div class="skill">
+          <Git />
+          <span>Git</span>
+        </div>
+  
+        <div class="skill">
+          <Postman />
+          <span>Postman</span>
+        </div>
+  
+        <div class="skill">
+          <Wordpress />
+          <span>Wordpress</span>
+        </div>
+  
+        <div class="skill">
+          <Filezilla />
+          <span>Filezilla</span>
+        </div>
+  
+        <div class="skill">
+          <SSH />
+          <span>SSH</span>
+        </div>
       </div>
-
-      <div class="skill">
-        <Nextjs />
-        <span>Nextjs</span>
-      </div>
-
-      <div class="skill">
-        <Angular />
-        <span>Angular</span>
-      </div>
-    </div>
-  </CardsSkils>
-
-  <CardsSkils title="Herramientas">
-    <div class="mt-5 grid grid-cols-4 gap-4 md:grid-cols-3">
-      <div class="skill">
-        <VSC />
-        <span>VSC</span>
-      </div>
-
-      <div class="skill">
-        <Figma />
-        <span>Figma</span>
-      </div>
-
-      <div class="skill">
-        <Git />
-        <span>Git</span>
-      </div>
-
-      <div class="skill">
-        <Postman />
-        <span>Postman</span>
-      </div>
-
-      <div class="skill">
-        <Wordpress />
-        <span>Wordpress</span>
-      </div>
-
-      <div class="skill">
-        <Filezilla />
-        <span>Filezilla</span>
-      </div>
-
-      <div class="skill">
-        <SSH />
-        <span>SSH</span>
-      </div>
-    </div>
-  </CardsSkils>
+    </CardsSkils>
+  </div>
+</section>
+  
 
   <style>
     .skill {
@@ -157,4 +173,3 @@ import SSH from "@/assets/icons/SSH.astro";
       font-size: 1.25em;
     }
   </style>
-</section>
