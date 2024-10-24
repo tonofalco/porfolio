@@ -7,18 +7,95 @@ import Javascript from "@/assets/icons/Javascript.astro";
 import LinkButton from "@/components/LinkButton.astro";
 import Github from "@/assets/icons/Github.astro";
 import Link from "@/assets/icons/Link.astro";
+import Sass from "@/assets/icons/Sass.astro";
+import HTML from "@/assets/icons/HTML.astro";
+import Redux from "@/assets/icons/Redux.astro";
+import Typescript from "@/assets/icons/Typescript.astro";
+import Tailwind from "@/assets/icons/Tailwind.astro";
+import AstroIcon from "@/assets/icons/AstroIcon.astro";
 
-CardProject;
+
 ---
 
 <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-sm:mx-5">
+
+  <!--! pendiente -->
   <CardProject
-    title="Aplicacion web"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a lacus justo. Sed nec tempor liberoisus."
-    img="https://images.unsplash.com/photo-1595239244990-b609da3d95f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxkYXRhJTNBaW1hZ2UlMkZibXAlM0JiYXNlNjQlMkNRazMyQkFBQUFBQUFBRFlBQUFBb0FBQUFDQUFBQUFnQUFBQUJBQmdBQUFBQUFNQUFBQUFUQ3dBQUV3c0FBQUFBQUFBQUFBQUFvWnRhbnBaTm9aTTR0S05KeTd0dzBjV0Z1clYlMkZpcEJqcDZSMW41dGtsSTQlMkZvWmxLdkxWNXlNT1R0TFNLaFl0Z3I2Mk1vYUY1aUl0Tmk1RlRxN0NJdnNLa3I3T1dnSVpkdGJPYXBhYUhobzVnaEpKbnBMS1l1Y1N5ckxTZ2ZvVmZ0N1dkcXF1T2s1bDBrcDklMkZyTHFudk1pN3JiYW1nSWRtdDdPWHNLMlBwYWFGckxHV3ZzYTB4YzYlMkZzYm1vaG8xdXRiQ1BzNiUyQk50YkdSd0wlMkJsenRDOHp0TEJ0cnlwaTVKMXRLJTJCTHRhJTJCTXVyV1Z5TVdxMU5TJTJGMGRUQnVMMm9qcFIzfGVufDB8MHx8fDE3MjM0MDU0MTR8MA&ixlib=rb-4.0.3&q=80&w=1080"
-    linkGithub="https://www.google.com/"
-    linkPreview="https://www.google.com/"
-    >
+  title="Pokedex"
+  description="Pokedex personalizada utilizando la libreria PokéAPI"
+  img="https://images.unsplash.com/photo-1595239244990-b609da3d95f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxkYXRhJTNBaW1hZ2UlMkZibXAlM0JiYXNlNjQlMkNRazMyQkFBQUFBQUFBRFlBQUFBb0FBQUFDQUFBQUFnQUFBQUJBQmdBQUFBQUFNQUFBQUFUQ3dBQUV3c0FBQUFBQUFBQUFBQUFvWnRhbnBaTm9aTTR0S05KeTd0dzBjV0Z1clYlMkZpcEJqcDZSMW41dGtsSTQlMkZvWmxLdkxWNXlNT1R0TFNLaFl0Z3I2Mk1vYUY1aUl0Tmk1RlRxN0NJdnNLa3I3T1dnSVpkdGJPYXBhYUhobzVnaEpKbnBMS1l1Y1N5ckxTZ2ZvVmZ0N1dkcXF1T2s1bDBrcDklMkZyTHFudk1pN3JiYW1nSWRtdDdPWHNLMlBwYWFGckxHV3ZzYTB4YzYlMkZzYm1vaG8xdXRiQ1BzNiUyQk50YkdSd0wlMkJsenRDOHp0TEJ0cnlwaTVKMXRLJTJCTHRhJTJCTXVyV1Z5TVdxMU5TJTJGMGRUQnVMMm9qcFIzfGVufDB8MHx8fDE3MjM0MDU0MTR8MA&ixlib=rb-4.0.3&q=80&w=1080"
+  linkGithub="https://www.google.com/"
+  linkPreview="https://www.google.com/"
+>
+  <div slot="tools">
+    <div class="flex flex-wrap items-center space-x-3">
+      <div class="w-6 h-6">
+        <AstroIcon />
+      </div>
+      <div class="w-6 h-6">
+        <Typescript />
+      </div>
+      <div class="w-8 h-8">
+        <Tailwind />
+      </div>
+    </div>
+  </div>
+</CardProject>
+
+  <CardProject
+    title="Cotizador de transportes"
+    description="aplicacion para obtener presupuestos de viajes usando la Api de Google Maps"
+    img="/./src/assets/img/cotizador-clientes.png"
+    linkGithub="https://github.com/tonofalco/googleMapsApi"
+    linkPreview="https://cotizador-clientes.netlify.app/"
+  >
+    <div slot="tools">
+      <div class="flex flex-wrap items-center space-x-3">
+        <div class="w-6 h-6">
+          <React />
+        </div>
+        <div class="w-6 h-6">
+          <Javascript />
+        </div>
+        <div class="w-6 h-6">
+          <Redux />
+        </div>
+        <div class="w-7 h-7">
+          <Bootstrap />
+        </div>
+      </div>
+    </div>
+  </CardProject>
+
+  <CardProject
+    title="Reproductor MP3"
+    description="Reproductor de musica online con diversas funciones"
+    img="/./src/assets/img/media-player.webp"
+    linkGithub="https://github.com/tonofalco/Media_player_React_TS_Tailwind"
+    linkPreview="https://media-player-react-ts-tailwind.vercel.app/"
+  >
+    <div slot="tools">
+      <div class="flex flex-wrap items-center space-x-3">
+        <div class="w-6 h-6">
+          <React />
+        </div>
+        <div class="w-6 h-6">
+          <Typescript />
+        </div>
+        <div class="w-8 h-8">
+          <Tailwind />
+        </div>
+      </div>
+    </div>
+  </CardProject>
+
+  <CardProject
+    title="Generador de Gifs"
+    description="Aplicacion para buscare Gifs de interes"
+    img="/./src/assets/img/gifs.png"
+    linkGithub="https://github.com/tonofalco/react-gifexpert"
+    linkPreview="https://react-gifexpert.vercel.app/"
+  >
     <div slot="tools">
       <div class="flex flex-wrap items-center space-x-3">
         <div class="w-6 h-6">
@@ -35,111 +112,46 @@ CardProject;
   </CardProject>
 
   <CardProject
-    title="Aplicacion web"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a lacus justo. Sed nec tempor liberoisus."
-    img="https://images.unsplash.com/photo-1595239244990-b609da3d95f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxkYXRhJTNBaW1hZ2UlMkZibXAlM0JiYXNlNjQlMkNRazMyQkFBQUFBQUFBRFlBQUFBb0FBQUFDQUFBQUFnQUFBQUJBQmdBQUFBQUFNQUFBQUFUQ3dBQUV3c0FBQUFBQUFBQUFBQUFvWnRhbnBaTm9aTTR0S05KeTd0dzBjV0Z1clYlMkZpcEJqcDZSMW41dGtsSTQlMkZvWmxLdkxWNXlNT1R0TFNLaFl0Z3I2Mk1vYUY1aUl0Tmk1RlRxN0NJdnNLa3I3T1dnSVpkdGJPYXBhYUhobzVnaEpKbnBMS1l1Y1N5ckxTZ2ZvVmZ0N1dkcXF1T2s1bDBrcDklMkZyTHFudk1pN3JiYW1nSWRtdDdPWHNLMlBwYWFGckxHV3ZzYTB4YzYlMkZzYm1vaG8xdXRiQ1BzNiUyQk50YkdSd0wlMkJsenRDOHp0TEJ0cnlwaTVKMXRLJTJCTHRhJTJCTXVyV1Z5TVdxMU5TJTJGMGRUQnVMMm9qcFIzfGVufDB8MHx8fDE3MjM0MDU0MTR8MA&ixlib=rb-4.0.3&q=80&w=1080"
-    linkGithub="https://www.google.com/"
-    linkPreview="https://www.google.com/"
-    >
+    title="Cafeteria web"
+    description="Plantilla de un sitio web informativo para cafeteria con diseño dinamico"
+    img="/./src/assets/img/cafeteria-web.png"
+    linkGithub="https://tonofalco.github.io/cafeteria/"
+    linkPreview="https://github.com/tonofalco/cafeteria"
+  >
     <div slot="tools">
       <div class="flex flex-wrap items-center space-x-3">
         <div class="w-6 h-6">
-          <React />
+          <HTML />
+        </div>
+        <div class="w-7 h-7">
+          <Bootstrap />
         </div>
         <div class="w-6 h-6">
           <Javascript />
-        </div>
-        <div class="w-8 h-8">
-          <Bootstrap />
         </div>
       </div>
     </div>
   </CardProject>
 
   <CardProject
-    title="Aplicacion web"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a lacus justo. Sed nec tempor liberoisus."
-    img="https://images.unsplash.com/photo-1595239244990-b609da3d95f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxkYXRhJTNBaW1hZ2UlMkZibXAlM0JiYXNlNjQlMkNRazMyQkFBQUFBQUFBRFlBQUFBb0FBQUFDQUFBQUFnQUFBQUJBQmdBQUFBQUFNQUFBQUFUQ3dBQUV3c0FBQUFBQUFBQUFBQUFvWnRhbnBaTm9aTTR0S05KeTd0dzBjV0Z1clYlMkZpcEJqcDZSMW41dGtsSTQlMkZvWmxLdkxWNXlNT1R0TFNLaFl0Z3I2Mk1vYUY1aUl0Tmk1RlRxN0NJdnNLa3I3T1dnSVpkdGJPYXBhYUhobzVnaEpKbnBMS1l1Y1N5ckxTZ2ZvVmZ0N1dkcXF1T2s1bDBrcDklMkZyTHFudk1pN3JiYW1nSWRtdDdPWHNLMlBwYWFGckxHV3ZzYTB4YzYlMkZzYm1vaG8xdXRiQ1BzNiUyQk50YkdSd0wlMkJsenRDOHp0TEJ0cnlwaTVKMXRLJTJCTHRhJTJCTXVyV1Z5TVdxMU5TJTJGMGRUQnVMMm9qcFIzfGVufDB8MHx8fDE3MjM0MDU0MTR8MA&ixlib=rb-4.0.3&q=80&w=1080"
-    linkGithub="https://www.google.com/"
-    linkPreview="https://www.google.com/"
-    >
+    title="Calculadora digital"
+    description="Calculadora funcional con modo oscuro implementado con JS puro."
+    img="/./src/assets/img/calculadora-digital.png"
+    linkGithub="https://github.com/tonofalco/Basic_calculator"
+    linkPreview="https://tonofalco.github.io/Basic_calculator/"
+  >
     <div slot="tools">
       <div class="flex flex-wrap items-center space-x-3">
         <div class="w-6 h-6">
-          <React />
+          <HTML />
+        </div>
+        <div class="w-7 h-7">
+          <Sass />
         </div>
         <div class="w-6 h-6">
           <Javascript />
         </div>
-        <div class="w-8 h-8">
-          <Bootstrap />
-        </div>
-      </div>
-    </div>
-  </CardProject>
-
-  <CardProject
-    title="Aplicacion web"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a lacus justo. Sed nec tempor liberoisus."
-    img="https://images.unsplash.com/photo-1595239244990-b609da3d95f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxkYXRhJTNBaW1hZ2UlMkZibXAlM0JiYXNlNjQlMkNRazMyQkFBQUFBQUFBRFlBQUFBb0FBQUFDQUFBQUFnQUFBQUJBQmdBQUFBQUFNQUFBQUFUQ3dBQUV3c0FBQUFBQUFBQUFBQUFvWnRhbnBaTm9aTTR0S05KeTd0dzBjV0Z1clYlMkZpcEJqcDZSMW41dGtsSTQlMkZvWmxLdkxWNXlNT1R0TFNLaFl0Z3I2Mk1vYUY1aUl0Tmk1RlRxN0NJdnNLa3I3T1dnSVpkdGJPYXBhYUhobzVnaEpKbnBMS1l1Y1N5ckxTZ2ZvVmZ0N1dkcXF1T2s1bDBrcDklMkZyTHFudk1pN3JiYW1nSWRtdDdPWHNLMlBwYWFGckxHV3ZzYTB4YzYlMkZzYm1vaG8xdXRiQ1BzNiUyQk50YkdSd0wlMkJsenRDOHp0TEJ0cnlwaTVKMXRLJTJCTHRhJTJCTXVyV1Z5TVdxMU5TJTJGMGRUQnVMMm9qcFIzfGVufDB8MHx8fDE3MjM0MDU0MTR8MA&ixlib=rb-4.0.3&q=80&w=1080"
-    linkGithub="https://www.google.com/"
-    linkPreview="https://www.google.com/"
-    >
-    <div slot="tools">
-      <div class="flex flex-wrap items-center space-x-3">
-        <div class="w-6 h-6">
-          <React />
-        </div>
-        <div class="w-6 h-6">
-          <Javascript />
-        </div>
-        <div class="w-8 h-8">
-          <Bootstrap />
-        </div>
-      </div>
-    </div>
-  </CardProject>
-
-  <CardProject
-    title="Aplicacion web"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a lacus justo. Sed nec tempor liberoisus."
-    img="https://images.unsplash.com/photo-1595239244990-b609da3d95f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxkYXRhJTNBaW1hZ2UlMkZibXAlM0JiYXNlNjQlMkNRazMyQkFBQUFBQUFBRFlBQUFBb0FBQUFDQUFBQUFnQUFBQUJBQmdBQUFBQUFNQUFBQUFUQ3dBQUV3c0FBQUFBQUFBQUFBQUFvWnRhbnBaTm9aTTR0S05KeTd0dzBjV0Z1clYlMkZpcEJqcDZSMW41dGtsSTQlMkZvWmxLdkxWNXlNT1R0TFNLaFl0Z3I2Mk1vYUY1aUl0Tmk1RlRxN0NJdnNLa3I3T1dnSVpkdGJPYXBhYUhobzVnaEpKbnBMS1l1Y1N5ckxTZ2ZvVmZ0N1dkcXF1T2s1bDBrcDklMkZyTHFudk1pN3JiYW1nSWRtdDdPWHNLMlBwYWFGckxHV3ZzYTB4YzYlMkZzYm1vaG8xdXRiQ1BzNiUyQk50YkdSd0wlMkJsenRDOHp0TEJ0cnlwaTVKMXRLJTJCTHRhJTJCTXVyV1Z5TVdxMU5TJTJGMGRUQnVMMm9qcFIzfGVufDB8MHx8fDE3MjM0MDU0MTR8MA&ixlib=rb-4.0.3&q=80&w=1080"
-    linkGithub="https://www.google.com/"
-    linkPreview="https://www.google.com/"
-    >
-    <div slot="tools">
-      <div class="flex flex-wrap items-center space-x-3">
-        <div class="w-6 h-6">
-          <React />
-        </div>
-        <div class="w-6 h-6">
-          <Javascript />
-        </div>
-        <div class="w-8 h-8">
-          <Bootstrap />
-        </div>
-      </div>
-    </div>
-  </CardProject>
-
-  <CardProject
-    title="Aplicacion web"
-    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a lacus justo. Sed nec tempor liberoisus."
-    img="https://images.unsplash.com/photo-1595239244990-b609da3d95f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHwxfHxkYXRhJTNBaW1hZ2UlMkZibXAlM0JiYXNlNjQlMkNRazMyQkFBQUFBQUFBRFlBQUFBb0FBQUFDQUFBQUFnQUFBQUJBQmdBQUFBQUFNQUFBQUFUQ3dBQUV3c0FBQUFBQUFBQUFBQUFvWnRhbnBaTm9aTTR0S05KeTd0dzBjV0Z1clYlMkZpcEJqcDZSMW41dGtsSTQlMkZvWmxLdkxWNXlNT1R0TFNLaFl0Z3I2Mk1vYUY1aUl0Tmk1RlRxN0NJdnNLa3I3T1dnSVpkdGJPYXBhYUhobzVnaEpKbnBMS1l1Y1N5ckxTZ2ZvVmZ0N1dkcXF1T2s1bDBrcDklMkZyTHFudk1pN3JiYW1nSWRtdDdPWHNLMlBwYWFGckxHV3ZzYTB4YzYlMkZzYm1vaG8xdXRiQ1BzNiUyQk50YkdSd0wlMkJsenRDOHp0TEJ0cnlwaTVKMXRLJTJCTHRhJTJCTXVyV1Z5TVdxMU5TJTJGMGRUQnVMMm9qcFIzfGVufDB8MHx8fDE3MjM0MDU0MTR8MA&ixlib=rb-4.0.3&q=80&w=1080"
-    linkGithub="https://www.google.com/"
-    linkPreview="https://www.google.com/"
-    >
-    <div slot="tools">
-      <div class="flex flex-wrap items-center space-x-3">
-        <div class="w-6 h-6">
-          <React />
-        </div>
-        <div class="w-6 h-6">
-          <Javascript />
-        </div>
-        <div class="w-8 h-8">
-          <Bootstrap />
-        </div>
+        
       </div>
     </div>
   </CardProject>
