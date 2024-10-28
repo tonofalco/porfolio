@@ -1,8 +1,7 @@
 ---
 const personalImageAlt = "Antonio Castillo";
-import Badge from "@/components/Badge.astro";
+
 import Linkedln from "../assets/icons/Linkedln.astro";
-import Mail from "../assets/icons/Mail.astro";
 import SocialPill from "./SocialPill.astro";
 import Github from "@/assets/icons/Github.astro";
 
@@ -11,7 +10,7 @@ import Github from "@/assets/icons/Github.astro";
 <section class="grid grid-cols-1 sm:grid-cols-3 gap-3 max-sm:text-center max-sm:mb-4">
   <div class="col-span-2 max-sm:order-2">
     <h1 class="font-bold text-5xl max-sm:mt-10 text-gray-800 dark:text-white">
-      Antonio Castillo
+      {personalImageAlt}
     </h1>
 
     <p
@@ -26,7 +25,7 @@ import Github from "@/assets/icons/Github.astro";
       class="flex flex-col sm:flex-row items-center justify-center sm:justify-between"
     >
       <div class="order-2 sm:order-1">
-        <SocialPill>Descargar CV</SocialPill>
+        <SocialPill href="/Antonio_CV_2024.pdf">Descargar CV</SocialPill>
       </div>
 
       <div class="flex gap-4 order-1 sm:order-2 max-sm:mb-4">
